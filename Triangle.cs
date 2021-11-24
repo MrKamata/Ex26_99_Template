@@ -4,30 +4,18 @@ using System.Text;
 
 namespace ConstructorSampe
 {
-    /// <summary>
-    /// 三角形
-    /// </summary>
     class Triangle
     {
-        private float width;    //　幅
-        private float height;   //　高さ
-        /// <summary>
-        /// コンストラクタ
-        /// </summary>
-        /// <param name="w">幅</param>
-        /// <param name="h">高さ</param>
-        public Triangle(float w, float h)
+        private float bottom;
+        private float height;
+        public Triangle(float B, float H)
         {
-            this.width = w;
-            this.height = h;
+            this.bottom = B;
+            this.height = H;
         }
-        /// <summary>
-        /// 面積を取得
-        /// </summary>
-        /// <returns>面積</returns>
         public float GetSurface()
         {
-            return (width * height / 2);
+            return bottom * height / 2;
         }
     }
 }
